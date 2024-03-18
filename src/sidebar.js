@@ -14,7 +14,7 @@ import { Button } from "@material-ui/core";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <CampusIcon classname="sidebar_campusIcon" />
+      <CampusIcon className="sidebar_campusIcon" />
       <SidebarOption Icon={HomeIcon} text="Home" active={true} />
       <SidebarOption Icon={CalendarTodayIcon} text="Events" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
