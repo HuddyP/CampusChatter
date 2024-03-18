@@ -9,23 +9,23 @@
   flex-direction: column;
 }
 
-.ChatterBox__input {
+.ChatterBox_input {
   display: flex;
   padding: 20px;
 }
 
-.ChatterBox__input > input {
+.ChatterBox_input > input {
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
 }
 
-.ChatterBox__input > input:focus {
+.ChatterBox_input > input:focus {
   outline: none;
 }
 
-.ChatterBox__button {
+.ChatterBox_button {
   background-color: var(--campus-color) !important;
   border: none !important;
   color: white !important;
@@ -37,7 +37,7 @@
   margin-left: auto !important;
 }
 
-.ChatterBox__imageInput {
+.ChatterBox_imageInput {
   border: none;
   padding: 15px;
 }

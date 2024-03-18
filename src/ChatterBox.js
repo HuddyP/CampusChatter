@@ -11,7 +11,7 @@ function ChatterBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      username: "HuddyP",
+      username: "HuddyP__",
       displayName: 'Hudson "HuddyP" Pfenning',
       avatar: " ",
       verified: true,
@@ -26,7 +26,7 @@ function ChatterBox() {
   return (
     <div className="ChatterBox">
       <form>
-        <div className="ChatterBox__input">
+        <div className="ChatterBox_input">
           <Avatar src=" " />
           <input
             value={ChatterMessage}
@@ -40,12 +40,12 @@ function ChatterBox() {
           value={ChatterImage}
           onChange={(e) => setChatterImage(e.target.value)}
           type="text"
-          className="ChatterBox__imageInput"
+          className="ChatterBox_imageInput"
         />
         <Button
           onClick={sendChatter}
           type="submit"
-          className="ChatterBox__button"
+          className="ChatterBox_button"
         >
           Start Some Chatter
         </Button>
