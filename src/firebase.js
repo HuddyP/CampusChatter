@@ -1,6 +1,5 @@
-import * as firebase from "firebase/app";
-import "firebase/firestore";
 import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6XhLmAi__dCJPwqTgvs7HVfeh4eQfXVw",
@@ -11,7 +10,11 @@ const firebaseConfig = {
   appId: "1:136617986555:web:e2dcd107ad44bd9526235e",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 
-const db = firebaseApp.firestore;
-export default db;
+const db = getFirestore(firebaseApp);
+export async function getFeed() {
+  const postsCol = collection(db, "posts");
+  const postsSnapshot = await getDocs(postsCol);
+  return (postsSnapshot?.docs.map((doc) => doc.data()));
+};

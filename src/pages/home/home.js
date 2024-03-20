@@ -8,6 +8,7 @@ function Home() {
     return (
       <div className="app">
         <Sidebar />
+        <Feed />
         <Widgets />
       </div>
     );
