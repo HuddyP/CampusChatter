@@ -1,5 +1,5 @@
 .ChatterBox {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 8px solid var(--campus-background);
   padding-right: 10px;
 }
@@ -11,7 +11,7 @@
 
 .ChatterBox_input {
   display: flex;
-  padding: 20px;
+  padding: 15px;
 }
 
 .ChatterBox_input > input {

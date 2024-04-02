@@ -47,7 +47,7 @@ function ChatterBox() {
           type="submit"
           className="ChatterBox_button"
         >
-          Start Some Chatter
+          Send Chatter
         </Button>
       </form>
     </div>
