@@ -1,13 +1,12 @@
 import { Avatar, Button } from "@material-ui/core";
 import React, { useState } from "react";
-import db from "./firebase";
 import "./ChatterBox.css";
 
 function ChatterBox() {
   const [ChatterMessage, setChatterMessage] = useState("");
   const [ChatterImage, setChatterImage] = useState("");
 
-  const sendChatter = (e) => {
+  /* const sendChatter = (e) => {
     e.preventDefault();
 
     db.collection("posts").add({
@@ -22,6 +21,7 @@ function ChatterBox() {
     setChatterMessage("");
     setChatterImage("");
   };
+  */
 
   return (
     <div className="ChatterBox">
@@ -43,7 +43,7 @@ function ChatterBox() {
           className="ChatterBox_imageInput"
         />
         <Button
-          onClick={sendChatter}
+          // onClick={sendChatter}
           type="submit"
           className="ChatterBox_button"
         >

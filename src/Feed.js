@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import Post from "./Post";
 import ChatterBox from "./ChatterBox";
-import db from "./firebase";
+import { getFeed } from "./firebase";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) => {
-      setPosts(snapshot.docs.map((doc) => doc.data()));
-    });
+   useEffect(() => {
+    const asyncFn = async () => {
+      setPosts(await getFeed())
+    }
+    asyncFn();
   }, []);
 
   return (
