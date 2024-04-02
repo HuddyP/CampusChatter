@@ -1,7 +1,8 @@
 .feed {
-  flex: 0.4;
+  flex: 1;
   border-right: var(--campus-background) 1px solid;
-  min-width: fit-content;
+  border-left: var(--campus-background) 1px solid;
+  width: 500px;
   overflow-y: scroll;
 }
 

@@ -7,6 +7,7 @@
 }
 .widgets_input {
   display: flex;
+  width: 350px;
   align-items: center;
   background-color: var(--campus-background);
   padding: 10px;
@@ -26,12 +27,15 @@
   color: black;
 }
 .widgets_widgetContainer {
+  height: 700px;
   margin-top: 15px;
   margin-left: 20px;
+  margin-right: 20px;
   padding: 20px;
   background-color: #f5f8fa;
   border-radius: 20px;
 }
+
 .widgets_widgetContainer > h2 {
   font-size: 18px;
   font-weight: 700;
@@ -48,4 +52,52 @@
   width: 50px;
   padding-right: 10px;
   border-radius: 50%;
+}
+
+.widgets_widgetSubContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.widgets_widgetSubContainer > h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.widgets_widgetSubContainer > p {
+  color: gray;
+  font-size: 14px;
+}
+
+.widgets_widgetSubContainer > img {
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
+  border-radius: 50%;
+}
+
+.sidebar_chatter {
+  background-color: var(--campus-background) !important;
+  border: none !important;
+  color: black !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: inherit !important;
+  border-radius: 20px !important;
+  width: 250px !important;
+}
+
+.chatterlogo {
+  height: 90px;
+  width: 90px;
+}
+
+.collegelogo {
+  height: 75px;
+  width: 75px;
 }

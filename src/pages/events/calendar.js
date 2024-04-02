@@ -8,10 +8,8 @@ function EventCalendar() {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="app">
-      <div className="calendar-container">
-        <Calendar onChange={setDate} value={date} />
-      </div>
+    <div className="calendar-container">
+      <Calendar onChange={setDate} value={date} />
     </div>
   );
 }
