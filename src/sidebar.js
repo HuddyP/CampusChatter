@@ -14,14 +14,11 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Sidebar() {
   return (
+    <nav>
     <div className="sidebar">
       <CampusIcon className="sidebar_campusIcon" />
-      <SidebarOption Icon={HomeIcon} text="Home" active={true}>
-        <Link to="/" />
-      </SidebarOption>
-      <SidebarOption Icon={CalendarTodayIcon} text="Events" Link to="/events">
-        <Link to="events" />
-      </SidebarOption>
+      <SidebarOption Icon={HomeIcon} text="Home" active={true} Link="/"/>
+      <SidebarOption Icon={CalendarTodayIcon} text="Events" Link="events"/>
       <SidebarOption
         Icon={NotificationsNoneIcon}
         text="Notifications"
@@ -46,6 +43,7 @@ function Sidebar() {
         Start Some Chatter
       </Button>
     </div>
+    </nav>
   );
 }
 

@@ -7,9 +7,7 @@ import Calendar from "react-calendar";
 
 function Events() {
   <div className="app">
-    <Sidebar />
     <Calendar />
-    <Widgets />
   </div>;
 }
 export default Events;

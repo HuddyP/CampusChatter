@@ -8,9 +8,7 @@ import EventCalendar from "../events/calendar.js";
 function Home() {
   return (
     <div className="app">
-      <Sidebar />
-      <EventCalendar />
-      <Widgets />
+      <Feed />
     </div>
   );
 }
