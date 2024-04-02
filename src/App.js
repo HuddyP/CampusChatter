@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/home/home';
-import Events from './pages/events/events';
-import Sidebar from './sidebar.js'
-import Widgets from './Widgets.js'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/home";
+import EventCalendar from "./pages/events/calendar.js";
+import LeftWidgets from "./left-widgets.js";
+import RightWidgets from "./right-widgets.js";
+import Navbar from "./navbar-index.js";
 
 /*
 TODO:
@@ -20,14 +21,17 @@ Change layout to make design more unique
 
 function App() {
   return (
-    <div className='app'>
-      <Sidebar />
-      <Routes>
-        <Route path = "/" element = {<Home />} />
-        <Route path = "events" element = {<Events />} />
-      </Routes>
-      <Widgets />
-    </div>
+    <Router>
+      <Navbar />
+      <div className="app">
+        <LeftWidgets />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/events" element={<EventCalendar />} />
+        </Routes>
+        <RightWidgets />
+      </div>
+    </Router>
   );
 }
 
