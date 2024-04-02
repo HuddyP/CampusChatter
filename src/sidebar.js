@@ -14,19 +14,34 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-      <div className="sidebar">
-        <CampusIcon className="sidebar_campusIcon" />
-        <SidebarOption Icon={HomeIcon} text="Home" active={true}>
-          <Link to = "/" />
-        </SidebarOption>
-        <SidebarOption Icon={CalendarTodayIcon} text="Events" Link to="events">
-          <Link to = "events" />
-        </SidebarOption>
-        <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" Link to="notifications" />
-        <SidebarOption Icon={MailOutlineIcon} text="Messages" Link to="messages" />
-        <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" Link to="bookmarks" />
-        <SidebarOption Icon={PermIdentityIcon} text="Profile" Link to="profile" />
-        <SidebarOption Icon={MoreHorizIcon} text="More" />
+    <div className="sidebar">
+      <CampusIcon className="sidebar_campusIcon" />
+      <SidebarOption Icon={HomeIcon} text="Home" active={true}>
+        <Link to="/" />
+      </SidebarOption>
+      <SidebarOption Icon={CalendarTodayIcon} text="Events" Link to="/events">
+        <Link to="events" />
+      </SidebarOption>
+      <SidebarOption
+        Icon={NotificationsNoneIcon}
+        text="Notifications"
+        Link
+        to="notifications"
+      />
+      <SidebarOption
+        Icon={MailOutlineIcon}
+        text="Messages"
+        Link
+        to="messages"
+      />
+      <SidebarOption
+        Icon={BookmarkBorderIcon}
+        text="Bookmarks"
+        Link
+        to="bookmarks"
+      />
+      <SidebarOption Icon={PermIdentityIcon} text="Profile" Link to="profile" />
+      <SidebarOption Icon={MoreHorizIcon} text="More" />
       <Button variant="outlined" className="sidebar_chatter" fullWidth>
         Start Some Chatter
       </Button>
