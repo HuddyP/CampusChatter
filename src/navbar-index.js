@@ -8,7 +8,6 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import "./Widgets.css";
 import { Search } from "@material-ui/icons";
 // import { Button } from "@material-ui/core";
@@ -27,35 +26,35 @@ const Navbar = () => {
           <NavLink to="/events">
             <CalendarTodayIcon />
           </NavLink>
-          <NavLink to="/">
+          <NavLink to="/notifications">
             <NotificationsNoneIcon />
           </NavLink>
-          <NavLink to="/">
+          <NavLink to="/whispers">
             <MailOutlineIcon />
           </NavLink>
-          <NavLink to="/">
+          <NavLink to="/bookmarks">
             <BookmarkBorderIcon />
           </NavLink>
-          <NavLink to="/">
+          <NavLink to="/profile">
             <PermIdentityIcon />
           </NavLink>
-          <NavLink to="/">
-            <MoreHorizIcon />
-          </NavLink>
         </NavMenu>
+
         {/* Uncomment if Start Some Chatter button wants to be brought back
         
         <Button variant="outlined" className="sidebar_chatter" fullWidth>
           Start Some Chatter
         </Button> */}
-        <NavBtn>
-          <NavBtnLink to="/signin">Sign In</NavBtnLink>
-        </NavBtn>
 
         <div className="widgets_input">
           <Search className="widgets_searchIcon" />
           <input placeholder="Search CampusChatter" type="text" />
         </div>
+
+        <NavBtn>
+          <NavBtnLink to="/signin">Sign In</NavBtnLink>
+        </NavBtn>
+
         <ChatterIcon className="chatterlogo" />
       </Nav>
     </>
