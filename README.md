@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# CampusChatter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### By Hudson Pfenning
 
-## Available Scripts
+<b>Table of Contents</b>
 
-In the project directory, you can run:
+- [Summary](#summary)
+- [How It Works](#how-it-works)
+  - [Home Page](#home-page)
+  - [Chatter Feed](#chatter-feed)
+  - [Calendar Page](#calendar-page)
+  - [Other Pages](#other-pages)
+- [Tools Used](#tools-used)
+- [Maintainers](#maintainers)
 
-### `npm start`
+## Summary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A React, HTML, CSS and JavaScript project that was written as my Individual Project for my Seminar class
+in the spring of 2024. This website is a concept website for a company called CampusChatter, which is a social
+media platform that works to "unify" the
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How It Works
 
-### `npm test`
+This website can be run on your local machine by running the command 'npm start' in a terminal, or it can be visited on
+the [Vercel hosted website](https://campus-chatter-p4ac.vercel.app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<b>IF RUNNING ON LOCAL MACHINE, MAKE SURE TO ADD '--legacy-peer-deps' WHEN DOWNLOADING DEPENDENCIES. THEY WILL NOT
+DOWNLOAD WITHOUT IT</b>
 
-### `npm run build`
+### Home Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The main page of the website, containing the navbar on the top, with router links to the home page, calendar page
+and other pages (other pages do not contain content as of this build). Also contains widgets along the left and right
+side of the feed which have hardcoded campus events on the left, and suggested profiles to "follow" on the right.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the center of the screen, there is a feed where the posts can be found
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Chatter Feed
 
-### `npm run eject`
+A feed where posts that are created by users can be found. Initially planned to include Firebase functionality, but had to remove
+at the last minute due to technical issues and time constraints.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Original plan with Firebase functionality was to have posts be stored within the Firebase database, and the feed calls each post
+(along with the information associated with it), format the posts into boxes and display them into the feed. Most of this functionality
+still works, but the posts that are "generated" are hard-coded example posts rather than ones that were made and stored within the Firebase
+database.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Calendar Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The "secondary" page of the website, containing a React calendar. Initially planned on adding functionality to show events on certain days,
+along with tags for those events for a hypothetical tag and filter system, but was unable to implement in this build.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Other Pages
 
-## Learn More
+Links to other pages can be found within the navbar, including a notifications page, a whispers page, a bookmarks page and a profile page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All the routing for these pages works, but there is no "unique" content contained within them, so the pages only render the site-wide elements
+such as the navbar and the widgets
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tools Used
 
-### Code Splitting
+- React Framework
+  - React was the foundational framework that I used for this project, and all the other libraries that were used are also offshoots of React
+- Libraries
+  - Material UI (or MUI)
+    \*An astronomically important library for the frontend visual design of the website, offering great icons and other UI based components
+  - React Router
+    - Probably one of the most essential libraries for getting this project working, adding routing and other navigational abilities to the site
+  - Firebase
+    - Used to create the feed for the posts (Chatters). Not functional in this build of the prototype, but the code still remains for possible reimplementation in the future
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Maintainers
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[@huddyp](https://github.com/HuddyP) Hudson Pfenning
